@@ -1,7 +1,7 @@
 import { useState } from "react";
 import CodeEditor from "../components/CodeEditor";
 import ReviewResult from "../components/ReviewResult";
-import { reviewCode } from "../services/APi";
+import { reviewCode } from "../services/api";
 import LanguageSelector from "../components/LanguageSelector";
 
 const ReviewPage = () => {
