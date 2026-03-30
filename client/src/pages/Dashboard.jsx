@@ -42,7 +42,7 @@ const Dashboard = () => {
 
     try {
       setLoading(true);
-      const { reviewCode } = await import("../services/APi");
+      const { reviewCode } = await import("../services/api");
       const data = await reviewCode(language, code);
       setReview(data.review);
     } catch (error) {
