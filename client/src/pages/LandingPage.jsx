@@ -168,7 +168,7 @@ const LandingPage = ({ onGetStarted }) => {
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-rose-500"></span>
               </span>
               <span className="text-sm text-gray-300 font-medium">
-                Now serving 10,000+ developers
+                Your AI companion for cleaner code
               </span>
             </div>
 
