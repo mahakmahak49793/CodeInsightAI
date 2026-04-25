@@ -76,15 +76,14 @@ ${code}
         });
 
     } catch (error) {
-        if (error.response?.status === 429) {
-            console.log("FULL ERROR:", error.response?.data || error.message);
-            return res.status(429).json({
-                message: "Rate limit hit. Please wait and try again.",
-            });
-        }
+        console.log("=== FULL ERROR ===");
+        console.log("Status:", error.response?.status);
+        console.log("Data:", JSON.stringify(error.response?.data, null, 2));
+        console.log("Message:", error.message);
+        console.log("==================");
 
         res.status(500).json({
             message: error.response?.data?.error?.message || error.message,
         });
-    }
-};
+    };
+}

@@ -13,7 +13,17 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true
-    }
+    },
+    otp: {
+        type: String,
+    },
+    otpExpiry: {
+        type: Date,
+    },
+    isVerified: {
+        type: Boolean,
+        default: false,
+    },
 }, { timestamps: true });
 
 module.exports = mongoose.model("User", userSchema);

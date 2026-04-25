@@ -21,6 +21,7 @@ app.use("/api/auth", authRoutes);
 const reviewRoutes = require("./routes/reviewRoutes");
 
 app.use("/api/review", reviewRoutes);
+app.use("/api/auth", authRoutes);
 
 // Connect DB
 mongoose.connect(process.env.MONGO_URI)
